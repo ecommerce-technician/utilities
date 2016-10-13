@@ -1,2 +1,2 @@
 # utilities
-Just a bunch of shell scripts and stuff I've saved
+## Just a bunch of shell scripts I've made, maybe you'll find some useful
