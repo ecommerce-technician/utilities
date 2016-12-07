@@ -1,5 +1,5 @@
 #bin/bash
-username=sentrywave
+username=xxxxxxxx
 echo "Hello create user with sudo priviledges, simply type the username to be created and hit [ENTER:]"
 read username
 adduser $username
@@ -40,7 +40,7 @@ server {
 
     server_name example.com;
 
-    location / {
+    location / {F
         proxy_pass http://localhost:8080;
         proxy_http_version 1.1;
         proxy_set_header Upgrade '$http_upgrade';
@@ -77,12 +77,12 @@ server {
 # HTTPS - proxy requests on to local Node.js app:
 server {
         listen 443;
-        server_name api.sentry-wave.com;
+        server_name xxxxx.com;
 
         ssl on;
         # Use certificate and key provided by Let's Encrypt:
-        ssl_certificate /etc/letsencrypt/live/api.sentry-wave.com/fullchain.pem;
-        ssl_certificate_key /etc/letsencrypt/live/api.sentry-wave.com/privkey.pem;
+        ssl_certificate /etc/letsencrypt/live/xxxxxxxxxx.com/fullchain.pem;
+        ssl_certificate_key /etc/letsencrypt/live/xxxxxxxx.com/privkey.pem;
         ssl_session_timeout 5m;
         ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
         ssl_prefer_server_ciphers on;
